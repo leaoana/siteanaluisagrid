@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+header {
+    width: 200vh;
+    height: 45px;
+    background-color: #f5f5f5;
+    display: grid;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    margin-left: 380px;
+    margin-top: 5px;
+}
+
+#header svg {
+    height: 16px;
+    fill: #1c1c1c;
+    margin-top: 5px;
+}
+
+#header svg:hover {
+    cursor: pointer;
+}
+
+#header p {
+    color: rgb(73, 73, 73);
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#headerp2 {
+    padding-left: 35px;
+}
+
+#svgfacebook {
+    margin-left: 450px;
+}
+
+#headersvg {
+    margin-left: 17px;
+}
+
+#language {
+    height: 16px;
+    padding-left: 30px;
+    margin-top: 5px;
+}
+
+#svglogin {
+    margin-left: 50px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr 1.3fr;
+    grid-template-rows: 80px 80px 431px 263px;
+}
+
+#main>div {
+    border: solid 1px;
+}
+
+#logo {
+    grid-column: 2;
+}
+
+#nav {
+    grid-column: 3/6;
+}
+
+#menu {
+    grid-column: 2;
+    grid-row: 2/4;
+}
+
+#busca {
+    grid-column: 3/6;
+    grid-row: 2;
+}
+
+#banner {
+    grid-column: 3/6;
+    grid-row: 3;
+}
+
+#prod01 {
+    grid-row: 4;
+    grid-column: 2;
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+#prod02 {
+    grid-row: 4;
+    grid-column: 3;
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+#prod03 {
+    grid-row: 4;
+    grid-column: 4;
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+#prod04 {
+    grid-row: 4;
+    grid-column: 5;
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+#nav>ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#nav li {
+    margin-right: 50px;
+}
+
+#elementos:hover {
+    cursor: pointer;
+    color: rgb(127, 173, 57);
+    transition: 0.4s;
+}
+
+#elementos {
+    text-decoration: none;
+}
+
+#nav svg {
+    height: 18px;
+    fill: #1c1c1c;
+    margin-right: 7px;
+}
+
+#nav svg:hover {
+    cursor: pointer;
+}
+
+#coracao {
+    margin-left: 180px;
+    padding-right: 8px;
+}
+
+#item {
+    font-weight: normal;
+    color: rgb(73, 73, 73);
+    margin-left: 15px;
+}
+
+#busca1 {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin: 20px;
+
+}
+
+#busca svg {
+    height: 10px;
+    fill: #1c1c1c;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#menu svg {
+    height: 20px;
+    fill: white;
+    margin-top: 12px;
+    margin-left: 45px;
+}
+
+#menu1 {
+    height: 45px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    background-color: rgb(127, 173, 57);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: bold;
+}
+
+#menu1 p {
+    margin-top: 5px;
+    font-size: 17px;
+    margin-left: 15px;
+
+}
+
+#menu1 svg {
+    height: 18px;
+    margin-right: 15px;
+    margin-left: 25px;
+
+}
+
+#nav-drop {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+    height: 100%;
+}
+
+.drop {
+    position: relative;
+}
+
+#menu-drop {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 200%;
+    background-color: rgb(34, 34, 34);
+    opacity: 0;
+    z-index: -10;
+}
+
+.drop:hover>#menu-drop {
+    opacity: 1;
+    z-index: 10;
+}
